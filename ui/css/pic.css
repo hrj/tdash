@@ -1,0 +1,255 @@
+body {
+background:url('/images/noiseBlue.jpg');
+/*background:#e0f0e0;*/
+padding:0;
+margin:0;
+font-family:sans-serif;
+}
+
+h1, h2 {
+color:#657bc9;
+text-shadow:0 1px 0 #fff, 0 -1px 0 #234;
+}
+h1 {
+font-size:150%;
+}
+h3 {
+color:#aaa;
+}
+
+#homeLink {
+border:none;
+}
+#homeLink>img{
+border:none;
+padding:8px 0;
+}
+
+#welcomeBar {
+background:#dee5f1;
+padding:0 20px;
+}
+#welcomeBar>table {
+width:100%;
+}
+
+#welcomeMsg {
+text-align:right;
+}
+#welcomeMsg>a{
+text-decoration:none;
+color:#657bc9;
+}
+#welcomeMsg>a>img{
+border:none;
+}
+
+#content>table {
+width:100%;
+}
+
+#contentPadded {
+padding:0 15px;
+}
+
+#contentPadded>table {
+width:100%;
+}
+
+#content>table>tbody>tr {
+vertical-align:top;
+}
+
+#leftPanel {
+text-align:center;
+padding:20px;
+}
+#mainImg {
+padding:8px;
+background:#fff;
+}
+
+#rightPanel {
+padding-top:20px;
+width:28%;
+border-left:3px solid #dee5f1;
+padding-left:12px;
+}
+#descr {
+font-weight:bold;
+font-size:110%;
+color:#657bc9;
+}
+
+/* Recent Pic */
+.recPic {
+border:none;
+}
+.recPic>img {
+border:4px solid #fff;
+}
+.recPic>img:hover {
+border:4px solid #657bc9;
+}
+
+#recPicsRow {
+vertical-align:bottom;
+}
+
+#newPic {
+font-size:120%;
+background:#dee5f1;
+padding:12px 5px;
+margin-top:24px;
+margin-right:12px;
+border:1px solid #ABB4AB;
+}
+
+#signInMsg {
+margin:10px auto;
+padding:10px;
+background:#c4d5f1;
+text-align:center;
+font-size:130%;
+}
+
+#signInLink {
+padding:5px;
+background:#c4d5f1;
+}
+
+#signOutLink {
+padding:0 20px;
+font-size:90%;
+}
+
+#uploadForm {
+text-align:center;
+}
+
+.embeddedForm {
+padding:10px 20px;
+}
+
+.freeForm {
+padding:50px;
+}
+
+#uploadForm>form {
+background:#fff;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+padding:20px;
+}
+#uploadForm>form>table {
+margin:0 auto;
+}
+#uploadForm>form>table>tbody>tr {
+vertical-align:top;
+}
+#uploadForm>form>table>tbody>tr>td {
+padding:20px 10px;
+}
+#uploadForm .formLabel {
+text-align:right;
+font-size:120%;
+}
+#uploadForm .formLabelHint {
+text-align:right;
+font-size:80%;
+color:#aaa;
+}
+#uploadForm .formInput {
+text-align:left;
+}
+
+.labelContent {
+margin:0;
+}
+
+#recGlobalPics {
+text-align:center;
+margin:50px 15px 25px 15px;
+border:1px solid #aaa;
+}
+#recGlobalPics>h2 {
+background:#c5d6f1;
+padding:6px 20px;
+display:inline-block;
+font-size:120%;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+}
+
+#recGlobalPics table {
+margin:10px auto;
+}
+
+.recGlobalPicsRow {
+vertical-align:bottom;
+}
+
+.recGlobalPicsRow td {
+padding:10px;
+}
+
+.uploadSummary {
+font-size:80%;
+text-align:left;
+}
+.uploadSummary>td {
+border-bottom:1px solid #aaa;
+padding:15px;
+}
+.uploadSummary>td>p {
+margin:0;
+}
+
+#footer>h1 {
+font-size:110%;
+color:#657bc9;
+}
+
+#toolbar {
+text-align:right;
+}
+
+#commentTbl {
+margin:20px auto;
+}
+#commentTbl tr {
+vertical-align:middle;
+}
+
+.commentSrc {
+font-size:90%;
+font-weight:bold;
+padding:12px;
+text-align:right;
+border-bottom:1px solid #aaa;
+}
+
+.commentTxt {
+font-size:120%;
+font-style:italic;
+font-family:serif;
+padding:12px;
+text-align:left;
+border-bottom:1px solid #aaa;
+}
+
+/*
+#newCommentTbl {
+margin:20px auto 0 auto;
+}
+*/
+
+.formDescrTd {
+text-align:right;
+padding:4px 12px;
+}
+
+.formFieldTd {
+text-align:left;
+padding:4px 12px;
+}

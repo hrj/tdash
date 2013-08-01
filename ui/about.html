@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About tDash.org | Twitter Dashboard</title>
+    <link rel="alternate" href="http://feedrinse.com/services/channel/?chanurl=5a4c9c7fa14d53d3a7a1e054d6f8d840" title="tDash News" type="application/rss+xml" />
+    <meta content="Read your Twitter timeline and post updates to your status. Share pictures with followers. All from within your browser." name="description" />
+    <meta content="about image picture Twitter browser client status update" name="keywords" />
+    <link href="/css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/common.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
+  <body>
+    <div id="content">
+      <table style="width:100%;"><tbody><tr style="vertical-align:top;">
+      <td>
+        <img src="/images/logoColor.png"/>
+        <h2>The motivation</h2>
+        <p><b>tDash</b> was born with the intent of applying a <b>GoogleReader</b> like interface to <b>Twitter</b>.</p>
+        <p>The main features of such an interface would be</p><ul>
+          <li>the ability to mark tweets as <em>read</em>, and thus to narrow down the user's attention to tweets that are as yet unread.</li>
+          <li>sort incoming tweets into nice folders automatically</li></ul>
+        <p>To <b>read</b> tweets in tDash all that you will need, ideally, is just one key: the <b>SPACEBAR</b>. Pressing it will take you to the next unread message automatically.</p>
+        <p>Apart from that there are many other keyboard shortcuts. See <b>Keys</b> from the <b>More</b> menu.</p>
+        <h2>Features at a glance</h2>
+        <ul>
+          <li>Inline expansion of conversations!</li>
+          <li>Support for Twitter lists</li>
+          <li>Automatic URL shortening via Bit.ly</li>
+          <li>Ability to upload images. See the <b>More</b> menu</li>
+        </ul>
+        <h2>Author</h2>
+        <p>HRJ. Find me <a href="http://lavadip.com">here</a>. Follow me <a href="http://twitter.com/h__r__j">here</a></p>
+        <h2>Credits</h2>
+        <p>A comprehensive list of credits is <a href="/credits.html">here</a></p>
+      </td><td>
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+      version: 2, type: 'faves', rpp: 20, interval: 6000, title: 'What people are saying about', subject: 'tDash!', width: 250, height: 400,
+      theme: {
+        shell: { background: '#555', color: '#eee' },
+        tweets: { background: '#ffffff', color: '#444444', links: '#499c49' }
+      },
+      features: {
+       scrollbar: true, loop: false, live: true, hashtags: true,
+       timestamp: true, avatars: true, behavior: 'all'
+      }
+      }).render().setUser('tdash').start();
+      </script>
+      </td></tr></tbody></table>
+      <div id="footer">
+        <ul>
+          <li class="menuItem"><a href="/"><span class="menuLabel">Home page</span></a></li>
+          <li class="menuItem"><a href="http://tdash.uservoice.com"><span class="menuLabel">Feedback</span></a></li>
+          <li class="menuItem"><a target="_blank" href="/images/screenshotLarge4.png"><span class="menuLabel">Screenshot</span></a></li>
+          <li class="menuItem"><a target="_blank" href="http://twitter.com/tdash"><span class="menuLabel">Follow-us</span></a></li>
+          <li class="menuItem"><a href="/media.html"><span class="menuLabel">tDash in the Media</span></a></li>
+        </ul>
+      </div>
+      <p id="copyright">&#169; 2009,2010 tDash.org</p>
+    </div>
+  </body>
+</html>

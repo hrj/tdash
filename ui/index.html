@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>tDash.org | Twitter Dashboard</title>
+    <link rel="alternate" href="http://feedrinse.com/services/channel/?chanurl=5a4c9c7fa14d53d3a7a1e054d6f8d840" title="tDash News" type="application/rss+xml" />
+    <link href="/css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/common.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:regular,bold' rel='stylesheet' type='text/css'>
+    <meta content="A browser based Twitter client that doesn't get between you and your tweets! It also allows uploading photos to Twitter." name="description" />
+    <meta content="Twitter browser client dashboard photos" name="keywords" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" ></script>
+    <!--script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script-->
+    <script type="text/javascript" src="/oauth/credsall2.js"></script>
+    <script type="text/javascript" src="/scripts/indexComp2.js"></script>
+  </head>
+  <body>
+    <table id="bodyTbl" cellspacing="0"><tbody>
+      <tr>
+        <td class="logoTd">
+          <img class="logo" alt="tDash logo" style="margin-top:50px" src="/images/logoColor.png" />
+        </td>
+        <td class="contentTd">
+            <div id="badges"></div>
+            <div id="loginInfo">
+            <table style="margin:0 auto;"><tbody><tr>
+              <td id="signInTd"><a href="/oauth/login" class="indexButton"><img alt="SignIn with OAuth" src="/images/SignIn.png" /></a></td>
+              <td><a class="indexButton" href="/pic/uploadStart"><img alt="Pics Upload" src="/images/pics.png" /></a></td>
+            </tr></tbody></table>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="logoTd">
+          <p class="tagLine"><em>a browser-based twitter client that doesn't get between you and your tweets</em><br/>......</p>
+          <p style="margin-top:2em"><a class="linkNoDec" href="/images/screenshotLarge6.png" target="_blank"><img class="linkNoDec" alt="tDash Screenshot" src="/images/screenshotSmall6.png"/></a><br/><span style="font-size:66%">[Screenshot]</span></p>
+          <a class="linkNoDec" href="/android.html">
+            <table style="margin-top:2em;color:#fff;background:#444;padding:.5em;display:inline-block;border-radius:1em;-moz-border-radius:1em;-webkit-border-radius:1em;">
+              <tbody><tr>
+                <td><img class="linkNoDec" src="/images/android_market.png" /></td>
+                <td style="font-size:80%">Also available on<br/><span style="font-size:125%;font-weight:bold">Android</span></td>
+              </tr></tbody>
+            </table>
+          </a>
+        </td>
+        <td class="contentTd">
+          <div>
+            <table cellspacing="0" id="featureDescr" ><tbody>
+              <!--tr>
+                <td class="shortFeature featureTopRow" data-id="1">OAuth</td>
+                <td class="longFeature featureTopRow" data-id="1">No need for registration.<br/>
+                No need to share password.<br/>
+                Use your Twitter account to login!</td>
+              </tr-->
+              <tr>
+                <td class="shortFeature featureTopRow" data-id="2">Minimalist</td>
+                <td class="longFeature featureTopRow" data-id="2">Clean, simple interface.</td>
+              </tr>
+              <tr>
+                <td class="shortFeature" data-id="4">Friendly</td>
+                <td class="longFeature" data-id="4">Long URLs auto shortened.<br/>
+                Short URLs auto expanded.<br/>
+                Many color themes.<br/>
+                Image and video preview.</td>
+                <td class="gapFeature"></td>
+                <td class="shortFeature" data-id="5">Professional</td>
+                <td class="longFeature" data-id="5">Sign in with multiple accounts.
+                <br/>Twitter Search.
+                <br/>Sync across multiple browsers.</td>
+              </tr>
+              <tr>
+                <td class="shortFeature" data-id="6">Image sharing</td>
+                <td class="longFeature" data-id="6">Upload images to Twitter<br/>
+                with the click of a button.</td>
+                <td class="gapFeature"></td>
+                <td class="shortFeature" data-id="7">Accessible</td>
+                <td class="longFeature" data-id="7">Keyboard shortcuts.<br/>
+                Use SPACEBAR to scroll to next tweet<br/>
+                and mark it as read.</td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td></td>
+                <td class="gapFeature"></td>
+                <td class="shortFeature" data-id="3">Conversations</td>
+                <td class="longFeature" data-id="3">View conversations inline.<br/>
+                Tweets grouped by sender.</td>
+                <!--td class="gapFeature"></td>
+                <td class="shortFeature" data-id="8">Coming Soon</td>
+                <td class="longFeature" data-id="8">Configurable update rates.</td-->
+              </tr>
+            </tbody></table>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="logoTd">
+          <div id="stats">
+            <p id="userCount">Fetching user count</p>
+            <p id="userCountDescr"></p>
+            <p id="imgCount">Fetching image count</p>
+            <p id="imgCountDescr"></p>
+          </div>
+          <!--p id="tagLine2"><b>Read, Reply, Retweet<br/>with ease</b></p-->
+        </td>
+        <td class="contentTd">
+          <div id="footer">
+            <ul>
+              <li class="menuItem"><a href="/about.html"><span class="menuLabel">About</span></a></li>
+              <li class="menuItem"><a target="_blank" href="http://tdash.uservoice.com"><span class="menuLabel">Feedback</span></a></li>
+              <li class="menuItem"><a target="_blank" href="http://twitter.com/tdash"><span class="menuLabel">Twitter</span></a></li>
+              <li class="menuItem"><a href="/media.html"><span class="menuLabel">tDash in the Media</span></a></li>
+            </ul>
+          </div>
+          <p id="copyright">&#169; 2009,2010 tDash.org</p>
+          <span id="oneforty.i.1999"  > </span>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>

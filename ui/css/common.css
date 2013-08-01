@@ -1,0 +1,81 @@
+body {
+font-family:sans-serif;
+margin:0;
+/*background:#e0f0e0;*/
+background:url('/images/noise2.jpg');
+}
+
+#footer {
+background:#dee5f1;
+padding:0 10px;
+border-top:1px solid #ccc;
+border-bottom:1px solid #fff;
+border-left:1px solid #eee;
+border-right:1px solid #eee;
+/*margin:40px 30px 10px 30px;*/
+-moz-border-radius:12px;
+-webkit-border-radius:12px;
+text-align:center;
+}
+
+#footer>ul {
+padding:8px 24px;   /* Note, the vertical padding has to match that of <li> element (plus border) */
+margin:0;
+}
+
+#footer a {
+text-decoration:none;
+color:inherit;
+padding:8px 24px;
+}
+.menuLabel {
+border-bottom:1px dotted #999;
+}
+#footer a:hover {
+background:#c4d5f1;
+}
+
+.menuItem{
+display:inline;
+list-style-type:none;
+}
+.menuItem .selected {
+color:#860000;
+background:#cad4eb;
+}
+
+#copyright {
+font-size:80%;
+text-align:center;
+}
+
+#bodyTbl {
+width:100%;
+}
+
+#bodyTbl>tbody>tr {
+vertical-align:top;
+}
+
+.logoTd {
+text-align:center;
+padding:20px;
+border-right:1px solid #999;
+}
+
+.logoTd .tagLine {
+margin:20px 0 0 0;
+padding:0;
+font-family:'Georgia', 'serif';
+}
+.logoTd #tagLine2 {
+font-family:'Georgia', 'serif';
+color:#164450;
+}
+
+.contentTd {
+text-align:center;
+padding:20px;
+border-left:1px solid #fff;
+width:100%;
+}

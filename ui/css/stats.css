@@ -1,0 +1,49 @@
+.contentTd h1 {
+margin:0;
+font-size:140%;
+}
+
+#statTbl {
+margin:0 auto 40px auto;
+}
+
+#statTbl th {
+padding:8px 20px;
+border-bottom:1px dashed #999;
+}
+
+#statTbl td {
+padding:4px 20px;
+}
+
+.repUnk {
+color:#555;
+}
+.repBot {
+color:#999;
+}
+.repVeryOften {
+font-weight:bold;
+}
+
+#pageNum {
+font-size:90%;
+}
+#pageNum a {
+text-decoration:none;
+}
+
+.noBorderLink {
+text-decoration:none;
+border:none;
+}
+
+.noBorderLink img {
+text-decoration:none;
+border:none;
+}
+
+#adFooter {
+margin:0 auto;
+width:150px;
+}

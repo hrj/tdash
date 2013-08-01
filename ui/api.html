@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>tDash.org | API doc</title>
+    <meta content="API for uploading images to tDash. Supports both OAuth and plain-password authentication." name="description" />
+    <meta content="tDash API image Twitter oauth password authentication" name="keywords" />
+    <link href="/css/common.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/api.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
+  <body>
+    <div id="content">
+      <img src="/images/logoBig.png"/>
+      <table style="width:100%;"><tbody><tr style="vertical-align:top;">
+      <td>
+        <div id="apiDiv">
+          <h1>tDash Image upload API</h1>
+          <h2>OAuth based API</h2>
+          <p>tDash supports authenticating with OAuth credentials.</p><p>We will support OAuth delegation as soon as it matures. Until then, your app will need to share
+          its OAuth credentials with us the traditional way. We don't store any of your credentials on our servers. We just use them for account verification and then dispose them immediately.</p>
+          <h3>URL</h3>
+          <p><b>http://tdash.org/pic/uploadOAuth.<em>format</em></b></p>
+          <p>Where <span class="keyword">format</span> is <span class="keyword">xml</span> or <span class="keyword">json</span></p>
+          <h3>HTTP Method</h3>
+          <b>POST</b>
+          <h3>Rate Limit</h3>
+          <p>The API is not rate limited. However there is a global limit on the number of images a user can upload per day (across all interfaces including the API)</p>
+          <h3>Parameters</h3>
+          <p>Note that the request has to encoded as a multi-part form/data.</p>
+          <table class="params">
+            <thead>
+              <tr><td>Name</td><td>Required?</td><td>Descr</td></tr>
+            </thead>
+            <tbody>
+              <tr><td class="keyword">image</td><td>Yes</td><td>This is the content of the image (GIF, JPEG, PNG)</td></tr>
+              <tr><td class="keyword">descr</td><td>No</td><td>Description to go along with the image. This will be used to compose the tweet.</td></tr>
+              <tr><td class="keyword">oauth_consumer_key</td><td>Yes</td><td>Your app's Oauth consumer key</td></tr>
+              <tr><td class="keyword">oauth_consumer_secret</td><td>Yes</td><td>Your app's Oauth consumer secret</td></tr>
+              <tr><td class="keyword">oauth_token</td><td>Yes</td><td>Your app user's Oauth token</td></tr>
+              <tr><td class="keyword">oauth_token_secret</td><td>Yes</td><td>Your app user's Oauth token secret</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </td><td style="width:10%"></td><td>
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+      version: 2, type: 'faves', rpp: 20, interval: 6000, title: 'What people are saying of', subject: 'tDash.org', width: 250, height: 400,
+      theme: {
+        shell: { background: '#e0f0e0', color: '#449292' },
+        tweets: { background: '#ffffff', color: '#444444', links: '#499c49' }
+      },
+      features: {
+       scrollbar: true, loop: false, live: true, hashtags: true,
+       timestamp: true, avatars: true, behavior: 'all'
+      }
+      }).render().setUser('tdash_org').start();
+      </script>
+      </td></tr></tbody></table>
+      <div id="footer">
+        <ul>
+          <li class="menuItem"><a href="/"><span class="menuLabel">Home</span></a></li>
+          <li class="menuItem"><a href="http://tdash.uservoice.com"><span class="menuLabel">Feedback</span></a></li>
+          <li class="menuItem"><a href="/images/screenshotLarge4.png"><span class="menuLabel">Screenshot</span></a></li>
+          <li class="menuItem"><a href="http://twitter.com/tdash"><span class="menuLabel">Follow-us</span></a></li>
+          <li class="menuItem"><a href="/media.html"><span class="menuLabel">tDash in the Media</span></a></li>
+        </ul>
+      </div>
+      <p id="copyright">&#169; 2009,2010 tDash.org</p>
+    </div>
+  </body>
+</html>

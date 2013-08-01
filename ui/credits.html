@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About tDash.org | Twitter Dashboard</title>
+    <link rel="alternate" href="http://feedrinse.com/services/channel/?chanurl=5a4c9c7fa14d53d3a7a1e054d6f8d840" title="tDash News" type="application/rss+xml" />
+    <meta content="Here we acknowledge our gratitude to the services and libraries used by us" name="description" />
+    <meta content="Twitter browser client application scala winstone jquery simplemodal mayank" name="keywords" />
+    <link href="/css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/common.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
+  <body>
+    <div id="content">
+      <table style="width:100%;"><tbody><tr style="vertical-align:top;">
+      <td>
+        <img src="/images/logoColor.png"/>
+        <h1>Credits</h1>
+        tDash is a typical mashup, utilising multiple open source libraries, and free services.  We sincerely thank the people behind them.
+        <p>As a special mention much thanks to Mayank Sharma, who has contributed directly to tDash, and some of his contributions have been made open-source. (Find the link below)</p>
+        <h2>Direct Credits</h2>
+        <table><tbody>
+          <tr><td><a href="http://scala-lang.org">Scala</a></td><td>Scala is used to power the webserver as also many other background services and scripts.</td></tr>
+          <tr><td><a href="http://winstone.sf.net">Winstone Servlet Container</a></td><td>Winstone is a nifty little servlet container that I have used for multiple projects with success.</td></tr>
+          <tr><td><a href="http://jquery.com">JQuery</a></td><td>The best framework for Javascript</td></tr>
+          <tr><td><a href="http://www.ericmmartin.com/projects/simplemodal/">JQuery ScrollTO Plugin</a></td><td>For smooth scrolling of the timeline</td></tr>
+          <tr><td><a href="http://www.ericmmartin.com/projects/simplemodal/">JQuery SimpleModal Plugin</a></td><td>For modal dialog boxes</td></tr>
+          <tr><td><a href="http://github.com/mayanks/persist-js/">Persis-js (our fork)</a></td><td>For persistent storage in the browser</td></tr>
+          <tr><td><a href="http://bit.ly/">Bit.ly API</a></td><td>For shortening URLs</td></tr>
+          <tr><td><a href="http://longurlplease.com/">LongURLPlease.com API</a></td><td>For lengthening URLs</td></tr>
+          <tr><td><a href="http://benalman.com/projects/jquery-longurl-plugin/">LongURLPlease.com JQuery Plugin</a></td><td>JQuery Plugin which uses the LongURLPlease service</td></tr>
+          <tr><td><a href="http://groups.google.com/group/oauth/browse_thread/thread/5e2edd1feacce70d/2b1921238189da9a">Open-source JS library for OAuth</a></td><td>Used for the OAuth protocol on client-side</td></tr>
+        </tbody></table>
+        <h2>Indirect Credits</h2>
+        <table><tbody>
+          <tr><td><a href="http://vim.org">Vim</a></td><td>The programmer's editor!</td></tr>
+          <tr><td><a href="http://kernel.org">Linux Kernel</a></td><td>The kernel that powers Fedora!</td></tr>
+          <tr><td><a href="http://fedora-project.org">Fedora OS</a></td><td>The programmer's OS!</td></tr>
+          <tr><td><a href="http://www.mozilla.com/firefox/">Firefox</a></td><td>The programmer's browser, especially with the Firebug plugin</td></tr>
+          <tr><td><a href="http://getfirebug.com/">FireBug</a></td><td>The most powerful web development tool</td></tr>
+          <tr><td><a href="http://google.com/chrome">Chrome</a></td><td>The really fast browser!</td></tr>
+        </tbody></table>
+      </td><td>
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+      version: 2, type: 'faves', rpp: 20, interval: 6000, title: 'What people are saying about', subject: 'tDash!', width: 250, height: 400,
+      theme: {
+        shell: { background: '#555', color: '#eee' },
+        tweets: { background: '#ffffff', color: '#444444', links: '#499c49' }
+      },
+      features: {
+       scrollbar: true, loop: false, live: true, hashtags: true,
+       timestamp: true, avatars: true, behavior: 'all'
+      }
+      }).render().setUser('tdash').start();
+      </script>
+      </td></tr></tbody></table>
+      <div id="footer">
+        <ul>
+          <li class="menuItem"><a href="/"><span class="menuLabel">Home page</span></a></li>
+          <li class="menuItem"><a href="/about.html"><span class="menuLabel">About Us</span></a></li>
+          <li class="menuItem"><a href="http://tdash.uservoice.com"><span class="menuLabel">Feedback</span></a></li>
+          <li class="menuItem"><a target="_blank" href="/images/screenshotLarge4.png"><span class="menuLabel">Screenshot</span></a></li>
+          <li class="menuItem"><a target="_blank" href="http://twitter.com/tdash"><span class="menuLabel">Follow-us</span></a></li>
+          <li class="menuItem"><a href="/media.html"><span class="menuLabel">tDash in the Media</span></a></li>
+        </ul>
+      </div>
+      <p id="copyright">&#169; 2009,2010 tDash.org</p>
+    </div>
+  </body>
+</html>
