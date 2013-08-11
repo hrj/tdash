@@ -10,10 +10,10 @@ all:
 
 scripts:
 	rm -rf ${STATIC_DIR}/scripts
-	mkdir ${STATIC_DIR}/scripts
+	mkdir -p ${STATIC_DIR}/scripts
 	cp scripts/jquery-1.3.2.min.js ${STATIC_DIR}/scripts/
 # cp scripts/jquery.scrollTo-min.js ${STATIC_DIR}/scripts/
-	cp scripts/oauth.js ${STATIC_DIR}/scripts/
+	cp scripts/oauth_july2010.js ${STATIC_DIR}/scripts/
 # cp scripts/bitly.js ${STATIC_DIR}/scripts/
 	cp scripts/sha1.js ${STATIC_DIR}/scripts/
 # cp scripts/persist-all-min.js ${STATIC_DIR}/scripts/
