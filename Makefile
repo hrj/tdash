@@ -1,4 +1,4 @@
-ROOT_DIR:=$(shell pwd)
+export ROOT_DIR:=$(shell pwd)
 
 export BIN_DIR=${ROOT_DIR}/bin
 export OUT_DIR=${ROOT_DIR}/build
