@@ -4,4 +4,4 @@ SELECT version from meta_info;
 ALTER TABLE up_comments ALTER COLUMN comment_txt TYPE CHARACTER VARYING (1024);
 
 UPDATE meta_info
-  SET version = 5;
+  SET version = 11;
