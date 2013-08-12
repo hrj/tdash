@@ -2,5 +2,4 @@ if [ -z "$BIN_DIR" ]; then
   BIN_DIR=../bin;
 fi
 
-# scala -cp tools/sbt_0.5.2_for_2.7.5.jar sbt.Main $*
-java -Xss2M -jar ${BIN_DIR}/sbt-launch_0.10.jar $*
+java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M -jar ${BIN_DIR}/sbt-launch_0.10.jar $*
