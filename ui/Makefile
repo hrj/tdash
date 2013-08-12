@@ -1,5 +1,5 @@
 ifndef DEBUG
-COMPRESS_CMD=java -jar ../tools/yuicompressor-2.4.2.jar
+COMPRESS_CMD=java -jar ${BIN_DIR}/yuicompressor-2.4.2.jar
 else
 COMPRESS_CMD=cat
 endif
@@ -10,10 +10,12 @@ all:
 
 scripts:
 	rm -rf ${STATIC_DIR}/scripts
-	mkdir ${STATIC_DIR}/scripts
+	mkdir -p ${STATIC_DIR}/scripts
+	scripts/createCombined2.sh
+	scripts/createIndexCombined.sh
 	cp scripts/jquery-1.3.2.min.js ${STATIC_DIR}/scripts/
 # cp scripts/jquery.scrollTo-min.js ${STATIC_DIR}/scripts/
-	cp scripts/oauth.js ${STATIC_DIR}/scripts/
+	cp scripts/oauth_july2010.js ${STATIC_DIR}/scripts/
 # cp scripts/bitly.js ${STATIC_DIR}/scripts/
 	cp scripts/sha1.js ${STATIC_DIR}/scripts/
 # cp scripts/persist-all-min.js ${STATIC_DIR}/scripts/
