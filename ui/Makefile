@@ -50,6 +50,7 @@ endif
 	cp persist.swf ${STATIC_DIR}
 #cp robots.txt ${STATIC_DIR}
 	cp *.ico ${STATIC_DIR}
+	mkdir -p ${SERVLET_DIR}
 	cp ErrorPage.html ${SERVLET_DIR}
 	
 clean:
